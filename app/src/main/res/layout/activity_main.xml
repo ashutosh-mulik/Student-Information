@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main">
+
+    <TextView
+        android:id="@+id/txt_stud"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:text="Student Info."
+        android:textColor="#000"
+        android:textSize="20dp"/>
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/txt_stud"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--COMPUTER ENGINEERING-->
+            <Button
+                android:id="@+id/btn_comp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_comp"
+                android:gravity="center_vertical"
+                android:paddingLeft="50dp"
+                android:text="Computer Engineering"
+                android:textColor="#FFF" />
+
+            <!--MECHANICAL ENGINEERING-->
+            <Button
+                android:id="@+id/btn_mech"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_mech"
+                android:gravity="center_vertical"
+                android:paddingLeft="50dp"
+                android:text="Mechanical Engineering"
+                android:textColor="#FFF" />
+
+            <!--ELECTRICAL ENGINEERING-->
+            <Button
+                android:id="@+id/btn_elec"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_electrical"
+                android:gravity="center_vertical"
+                android:paddingLeft="50dp"
+                android:text="Electrical Engineering"
+                android:textColor="#FFF" />
+
+            <!--E&TC ENGINEERING-->
+            <Button
+                android:id="@+id/btn_etc"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_etc"
+                android:gravity="center_vertical"
+                android:paddingLeft="50dp"
+                android:text="E&amp;TC Engineering"
+                android:textColor="#FFF" />
+
+            <!--ALL ENGINEERING STUDENTS-->
+            <Button
+                android:id="@+id/btn_all"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_all"
+                android:gravity="center_vertical"
+                android:paddingLeft="50dp"
+                android:text="All Students"
+                android:textColor="#FFF" />
+
+            <!--ADD STUDENT-->
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_add"
+                android:gravity="center_vertical"
+                android:paddingLeft="50dp"
+                android:text="ADD NEW STUDENT"
+                android:textColor="#FFF" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

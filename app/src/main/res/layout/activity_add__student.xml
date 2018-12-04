@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add_Student">
+
+    <TextView
+        android:id="@+id/add_txt_register"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:elevation="10dp"
+        android:paddingTop="10dp"
+        android:text="Register"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="20dp" />
+
+    <ScrollView
+        android:id="@+id/add_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/add_txt_register">
+
+        <LinearLayout
+            android:id="@+id/add_l_layout_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <!--Enrollment NO Edit Text -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:hintTextAppearance="@style/MyHintText">
+
+                <EditText
+                    android:id="@+id/add_txt_enroll"
+                    style="@style/MyEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/ic_line"
+                    android:hint="Enrollment No"
+                    android:padding="10dp"
+                    android:textColorHint="@color/soft_blue"
+                    android:textColor="@color/soft_blue"
+                    android:inputType="number"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <!--First Name Edit Text -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:hintTextAppearance="@style/MyHintText">
+
+                <EditText
+                    android:id="@+id/add_txt_fname"
+                    style="@style/MyEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/ic_line"
+                    android:hint="First Name"
+                    android:padding="10dp"
+                    android:textColorHint="@color/soft_blue"
+                    android:textColor="@color/soft_blue"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <!--Last Name Edit Text -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:hintTextAppearance="@style/MyHintText">
+
+                <EditText
+                    android:id="@+id/add_txt_lname"
+                    style="@style/MyEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/ic_line"
+                    android:hint="Last Name"
+                    android:padding="10dp"
+                    android:textColorHint="@color/soft_blue"
+                    android:textColor="@color/soft_blue"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <!--Department Spinner-->
+            <Spinner
+                android:id="@+id/add_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/ic_line">
+
+            </Spinner>
+
+            <!--Add Student Button-->
+            <Button
+                android:id="@+id/add_btn_add"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/bg_mech"
+                android:text="ADD"
+                android:textColor="#FFF"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
