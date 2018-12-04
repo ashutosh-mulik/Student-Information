@@ -61,6 +61,7 @@ public class Main extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
+        //starts the View Student Activity
         switch (v.getId()){
             case R.id.btn_comp :
                 intent.putExtra("dept","Computer Engineering");
